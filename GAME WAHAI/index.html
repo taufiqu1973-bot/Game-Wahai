@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Klik</title>
+  <style>
+    body {
+      text-align: center;
+      background: #222;
+      font-family: Arial;
+    }
+
+    #scoreboard {
+      width: 400px;
+      margin: 20px auto 10px;
+      background: rgba(0,0,0,0.75);
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    canvas {
+      display: block;
+      margin: auto;
+      border: 2px solid #333;
+      background: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<div id="scoreboard">
+  <span>Score: <b id="score">0</b></span>
+  <span>High: <b id="high">0</b></span>
+  <span>Level: <b id="level">1</b></span>
+  <span>Lives: <b id="lives">5</b></span>
+</div>
+
+<canvas id="game" width="400" height="600"></canvas>
+
+<script src="game.js"></script>
+</body>
+</html>
